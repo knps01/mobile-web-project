@@ -26,7 +26,7 @@
             <audio id="sound" src="sound/space.mp3" preload="auto"></audio>
         </a-assests>
 
-        <a-sphere position="-550 1.25 -15" radius="100.5" animation="property: rotation; to: 0 360 0; fill: backwards; dur: 30000; loop: true; easing: linear; segment-height: 56;"  material="src: #sun; shader: flat; " sound="src: url(sound/space.mp3); autoplay: true; loop: true; volume: 75;" >
+        <a-sphere position="-550 1.25 -15" radius="100.5" animation="property: rotation; to: 0 360 0; fill: backwards; dur: 30000; loop: true; easing: linear; segment-height: 56;"  material="src: #sun; shader: flat; " sound="src: url(sound/space.mp3); autoplay: true; loop: true; volume: 55;" >
             <!-- Mercury ring -->
             <a-ring material="shader: flat; opacity: 0.5; color: white;" segments-theta="512" radius-inner="500" radius-outer="500.1" side="double" rotation="90 0 0"></a-ring>
             <!-- Venus ring -->
@@ -90,12 +90,15 @@
             <a-sphere position="850 0 0" radius="5.5" src="#neptune" animation="property: rotation; to: 0 360 0; fill: backwards; dur: 670; loop: true; easing: linear; segment-height: 56;"  >
             </a-sphere>
         </a-entity>
-        <!-- Background (Galaxy) -->
+        <!-- Background (Space) -->
         <a-sky src="#space" radius="5000"></a-sky>
 
         <a-entity sound="src: #sound"></a-entity>
+
         
     </a-schene>
+
+    <script src="index.js"></script>
     
 </body>
 </html>
