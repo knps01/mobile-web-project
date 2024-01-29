@@ -6,68 +6,65 @@
   </head>
   <body>
     <a-scene>
-      <a-sky src="img/img1.jpg"></a-sky>
+      <a-sky src="img/img1.jpg" radius="5000" material geometry scale></a-sky>
         
-      <a-sphere 
-      position="0 1.25 -100" 
-      radius="2" 
-      src="img/sun.jpg"
-      scale="50 50 50 50"></a-sphere>
+      <a-sphere id="sun"position="0 1.25 -100" radius="2" src="img/sun.jpg"
+      scale="50 50 50 50" 
+      animation="property: rotation; to: 0 360 0; fill: backwards; 
+      dur: 30000; loop: true; easing: linear; segment-height: 56;"></a-sphere>
 
       <a-sphere 
-      position="50 0 65" 
-      radius="2" 
-      src="img/mercury.jpg"
-      scale="3 3 3 3"></a-sphere>
+      id="mercury" position="50 0 65" radius="2" src="img/mercury.jpg"
+      scale="3 3 3 3"
+      animation="property: rotation; to: 0 360 0; fill: backwards; 
+      dur: 58650; loop: true; easing: linear; segment-height: 56;"></a-sphere>
 
       <a-sphere 
-      position="50 0 100" 
-      radius="2" 
-      src="img/venus.jpg"
-      scale="4 4 4 4"></a-sphere>
+      id="venus" position="50 0 100" radius="2" src="img/venus.jpg"
+      scale="4 4 4 4"
+      animation="property: rotation; to: 0 360 0; fill: backwards; 
+      dur: 243000; loop: true; easing: linear; segment-height: 56;"></a-sphere>
 
       <a-sphere 
-      position="50 0 150" 
-      radius="2" 
-      src="img/earth.jpg"
-      scale="4 4 4 4"></a-sphere>
+      id="earth" position="50 0 150" radius="2" src="img/earth.jpg"
+      scale="4 4 4 4"
+      animation="property: rotation; to: 0 360 0; fill: backwards; 
+      dur: 1000; loop: true; easing: linear; segment-height: 56;"></a-sphere>
 
       <a-sphere 
-      position="50 0 165" 
-      radius="2" 
-      src="img/moon.jpg"
-      scale="0.5 0.5 0.5 0.5"></a-sphere>
+      id="moon"position="50 0 165" radius="2" src="img/moon.jpg"
+      scale="0.5 0.5 0.5 0.5"
+      animation="property: rotation; to: 0 360 0; fill: backwards; 
+      dur: 2000; loop: true; easing: linear; segment-height: 56;"></a-sphere>
 
-      <a-sphere 
-      position="50 0 200" 
-      radius="2" 
-      src="img/mars.jpg"
-      scale="3 3 3 3"></a-sphere>
+      <a-sphere id="mars" position="50 0 200" radius="2" src="img/mars.jpg"
+      scale="3 3 3 3"
+      animation="property: rotation; to: 0 360 0; fill: backwards; 
+      dur: 1030; loop: true; easing: linear; segment-height: 56;"></a-sphere>
 
-      <a-sphere 
-      position="50 0 250" 
-      radius="2" 
-      src="img/jupiter.jpg"
-      scale="8 8 8 8"></a-sphere>
+      <a-sphere id="jupiter" position="50 0 250" radius="2" src="img/jupiter.jpg"
+      scale="8 8 8 8"
+      animation="property: rotation; to: 0 360 0; fill: backwards; 
+      dur: 410; loop: true; easing: linear; segment-height: 56;"></a-sphere>
 
-      <a-sphere 
-      position="50 0 300" 
-      radius="2" 
-      src="img/saturn.jpg"
-      scale="7 7 7 7"></a-sphere>
+      <a-sphere id="saturn" position="50 0 300" radius="2" src="img/saturn.jpg"
+      scale="7 7 7 7"
+      animation="property: rotation; to: 0 360 0; fill: backwards; 
+      dur: 440; loop: true; easing: linear; segment-height: 56;"></a-sphere>
 
-      <a-sphere 
-      position="50 0 350" 
-      radius="2" 
-      src="img/neptune.jpg"
-      scale="5 5 5 5"></a-sphere>
+      <a-sphere id="uranus" position="50 0 350" radius="2" src="img/uranus.jpg"
+      scale="5 5 5 5"
+      animation="property: rotation; to: 0 360 0; fill: backwards; 
+      dur: 720; loop: true; easing: linear; segment-height: 56;"></a-sphere>
 
-      <a-sphere 
-      position="50 0 400" 
-      radius="2" 
-      src="img/uranus.jpg"
-      scale="5 5 5 5"></a-sphere>
+      <a-sphere id="neptune" position="50 0 400" radius="2" src="img/neptune.jpg"
+      scale="5 5 5 5"
+      animation="property: rotation; to: 0 360 0; fill: backwards; 
+      dur: 720; loop: true; easing: linear; segment-height: 56;"></a-sphere>
+
+      
       
     </a-scene>
+
 
   </body>
