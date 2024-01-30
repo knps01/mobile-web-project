@@ -51,7 +51,7 @@
 
         <a-entity gltf-model="#spacestation" position="10 20 10" scale="0.1 0.1 0.1"></a-entity>
         <a-entity gltf-model="#astro" position="65 7 -20" scale="20 20 20" animation="dur: 30000;" rotation="0 90 0"></a-entity>
-        <a-entity gltf-model="#probe" position="8 10 -20" scale="0.1 0.1 0.1" animation="dur: 30000;" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="#probe" position="8 10 -20" scale="0.1 0.1 0.1" animation="property: rotation; to: 0 360 0; fill: backwards; dur: 10000; loop: true; easing: linear; segment-height: 56;" rotation="0 90 0"></a-entity>
         <!-- Mercury planet -->
         <a-text value="Sun" position="-350 7 -15" scale="100 100 100"></a-text>
 
