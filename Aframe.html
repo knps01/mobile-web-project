@@ -23,6 +23,8 @@
             <img id="uranus" src="img/uranus.jpg">
             <img id="venus" src="img/venus.jpg">
             <audio id="sound" src="sound/space.mp3" preload="auto"></audio>
+            <a-asset-item id="spacestation" src="spacestation.glb"></a-asset-item>
+            
         </a-assests>
 
         <a-sphere position="-550 1.25 -15" radius="100.5" animation="property: rotation; to: 0 360 0; fill: backwards; dur: 30000; loop: true; easing: linear; segment-height: 56;"  material="src: #sun; shader: flat; " sound="src: url(sound/space.mp3); autoplay: true; loop: true; volume: 55;" >
@@ -45,6 +47,7 @@
 
         </a-sphere>
 
+        <a-entity gltf-model="#spacestation" position="10 20 10" scale="0.2 0.2 0.2" animation="dur: 30000;"></a-entity>
 
         <!-- Mercury planet -->
         <a-text value="Sun" position="-350 7 -15" scale="100 100 100"></a-text>
